@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+        body {
+            background: #f3f4f7;
+            color: #2d3436;
+        }
+        header {
+            background: linear-gradient(135deg, #4e8cff, #6c5ce7);
+            padding: 60px;
+            text-align: center;
+            color: #fff;
+        }
+        header h1 {
+            font-size: 48px;
+            font-weight: 700;
+        }
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        /* Photo Styling */
+        .profile-pic {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ffffffaa;
+            margin-top: 20px;
+        }
+
+        .container {
+            width: 85%;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+        }
+
+        .card {
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            color: #6c5ce7;
+            font-size: 24px;
+        }
+
+        ul li {
+            margin: 8px 0;
+            line-height: 1.5;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #dfe6e9;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #4e8cff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        .download-btn:hover {
+            background: #3c74d8;
+        }
+
+        @media(max-width: 900px){
+            .container{
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Allon Jacob</h1>
+        <p>Student | Class 12 | Cybersecurity Aspiring Student</p>
+        <!-- Add your photo here -->
+        <img src="50dffcfd-8ed3-493d-a023-77b667a9d75f.jpg" class="profile-pic" alt="Profile Photo">
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <div class="section">
+                <h2>Contact</h2>
+                <ul>
+                    <li>Email: allonjacb@email.com</li>
+                    <li>City: Kottayam</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Basic knowledge of Python</li>
+                    <li>Basic knowledge of AI</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Languages</h2>
+                <ul>
+                    <li>English</li>
+                    <li>Hindi</li>
+                    <li>Malayalam</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="section">
+                <h2>Career Objective</h2>
+                <p>Motivated Class 12 student with a passion for technology and AI, aiming to build innovative projects and grow technical skills.</p>
+            </div>
+
+            <div class="section">
+                <h2>Education</h2>
+                <ul>
+                    <li>Class 12 — Placid Vidya Vihar — Year</li>
+                    <li>Class 10 — Mar Baselios Public School — Year</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Projects</h2>
+                <p><strong>AI-Powered Speech-to-Text Notes System</strong></p>
+                <ul>
+                    <li>Used Python SpeechRecognition and Google API</li>
+                    <li>Audio processed using Pydub</li>
+                    <li>Notes saved using python-docx</li>
+                    <li>Helps students convert lectures into notes</li>
+                </ul>
+
+                <p><strong>Personalised Wardrobe Manager</strong></p>
+                <ul>
+                    <li>Python-MySQL connectivity</li>
+                    <li>Automated outfit suggestions</li>
+                </ul>
+            </div>
+
+            <a href="resume.pdf" class="download-btn">Download Resume</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2025 Allon Jacob. All Rights Reserved.
+    </div>
+
+</body>
+</html>
